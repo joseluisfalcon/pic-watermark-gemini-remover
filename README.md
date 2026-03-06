@@ -1,5 +1,9 @@
 # Pic Watermark Remover 🎨
 
+[![Version](https://img.shields.io/badge/version-1.1-blue.svg)](https://github.com/yourusername/pic-watermark-gemini-remover/releases/tag/v1.1)
+[![License](https://img.shields.io/badge/license-BSD--3--Clause-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
+
 **Remove white diamond watermarks from image bottom-right corner with OpenCV or AI-powered methods.**
 
 Two versions available:
@@ -306,12 +310,14 @@ python main.py --input photo.jpg --compare
 
 ## 🔄 Version History
 
-### Version 2.0 (Current - AI/CUDA)
-- ✨ Added PyTorch AI inpainting support
-- 🚀 CUDA/GPU acceleration for RTX series
+### Version 1.1 (Current - AI/CUDA Enhanced)
+- ✨ PyTorch AI inpainting with GPU acceleration
+- 🚀 CUDA 12.8 with RTX 5070 Ti support (sm_120)
 - 📊 Comparison mode (--compare)
-- 🎯 Better quality on complex backgrounds
-- 📖 Improved documentation
+- 🎯 Superior quality on complex backgrounds
+- 🔧 Fixed GPU compatibility issues
+- 📝 Added .gitignore for clean repository
+- 📖 Comprehensive documentation
 
 ### Version 1.0 (Simple OpenCV)
 - Brightness + relative brightness detection
@@ -324,8 +330,11 @@ python main.py --input photo.jpg --compare
 ## ⚖️ License & Credits
 
 **Author**: Falcon
-**Purpose**: Educational/Personal Use
+**License**: [BSD 3-Clause License](LICENSE)
+**Version**: 1.1
 **Technologies**: OpenCV, PyTorch, CUDA
+
+This project is licensed under the BSD 3-Clause License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
