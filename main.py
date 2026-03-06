@@ -120,12 +120,7 @@ def inpaint_ai_lama(image: np.ndarray, mask: np.ndarray, device: str = "cuda") -
     result_bgr = cv2.cvtColor(result_np, cv2.COLOR_RGB2BGR)
 
     # Apply post-processing with OpenCV for better blending
-    result_bgr = cv2.inpaint(
-        result_bgr,
-        mask,
-        radius=3,
-        flags=cv2.INPAINT_TELEA
-    )
+    result_bgr = cv2.inpaint(result_bgr, mask, 3, cv2.INPAINT_TELEA)
 
     print("[*] AI inpainting complete.")
     return result_bgr
